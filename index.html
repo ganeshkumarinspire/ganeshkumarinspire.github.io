@@ -1,0 +1,446 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ganesh Kumar · Scrum Master</title>
+<meta name="description" content="Ganesh Kumar — Certified Scrum Master (SAFe 6.0, CSM) in Paris. Agile delivery for complex enterprise programs, with data and AI. 12+ years with Verizon, Adidas, ABB and Walmart.">
+<meta property="og:title" content="Ganesh Kumar · Scrum Master (SAFe 6.0, CSM)">
+<meta property="og:description" content="Agile delivery for complex enterprise programs, with data and AI. Paris · France and Europe.">
+<meta property="og:image" content="https://ganeshkumarinspire.github.io/assets/photo.jpg">
+<meta property="og:url" content="https://ganeshkumarinspire.github.io/">
+<meta property="og:type" content="profile">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><rect width='64' height='64' rx='14' fill='%2304342C'/><text x='32' y='42' font-family='Arial' font-size='26' font-weight='700' fill='%23EF9F27' text-anchor='middle'>GK</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --teal-950:#04342C; --teal-900:#085041; --teal-700:#0F6E56; --teal-500:#1D9E75;
+    --teal-300:#5DCAA5; --teal-200:#9FE1CB; --teal-50:#E1F5EE;
+    --amber:#EF9F27; --amber-dark:#BA7517; --amber-ink:#412402; --amber-50:#FAEEDA;
+    --ink:#1F2A27; --muted:#55615D; --line:#D6E3DE; --bg:#FFFFFF; --bg-soft:#F4FAF7;
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{margin:0;font-family:Inter,system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;color:var(--ink);background:var(--bg);line-height:1.6;-webkit-font-smoothing:antialiased}
+  a{color:inherit}
+  html[lang="en"] [lang="fr"], html[lang="fr"] [lang="en"]{display:none !important}
+  .wrap{max-width:1080px;margin:0 auto;padding:0 24px}
+
+  /* Nav */
+  nav{position:sticky;top:0;z-index:10;background:var(--teal-950);border-bottom:1px solid var(--teal-900)}
+  nav .wrap{display:flex;align-items:center;justify-content:space-between;height:60px;gap:16px}
+  .brand{color:#fff;font-weight:600;text-decoration:none;letter-spacing:.01em}
+  .links{display:flex;align-items:center;gap:22px}
+  .links a{color:var(--teal-200);text-decoration:none;font-size:14px}
+  .links a:hover{color:#fff}
+  .lang{display:flex;border:1px solid var(--teal-700);border-radius:999px;overflow:hidden}
+  .lang button{background:transparent;border:0;color:var(--teal-200);font:500 12px Inter,sans-serif;padding:5px 11px;cursor:pointer}
+  .lang button[aria-pressed="true"]{background:var(--teal-700);color:#fff}
+
+  /* Hero */
+  .hero{display:grid;grid-template-columns:1.45fr 1fr}
+  .hero-main{background:var(--teal-950);padding:72px 48px 64px max(24px,calc((100vw - 1080px)/2 + 24px))}
+  .hero-side{background:var(--teal-50);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:20px;padding:48px 24px}
+  .eyebrow{color:var(--teal-300);font-size:14px;font-weight:500;margin:0}
+  h1{color:#fff;font-size:clamp(30px,4vw,44px);line-height:1.15;font-weight:700;margin:12px 0 14px;letter-spacing:-.01em;max-width:620px}
+  .sub{color:var(--teal-200);font-size:16px;margin:0;max-width:580px}
+  .tags{display:flex;flex-wrap:wrap;gap:8px;margin:22px 0}
+  .tags span{background:var(--teal-900);color:var(--teal-200);font-size:13px;padding:5px 12px;border-radius:999px}
+  .seeking{color:#FAC775;font-size:14px;font-weight:500;margin:0 0 24px}
+  .ctas{display:flex;flex-wrap:wrap;gap:10px}
+  .btn{display:inline-flex;align-items:center;gap:8px;font-size:14px;font-weight:500;padding:10px 18px;border-radius:8px;text-decoration:none;transition:transform .15s ease,background .15s ease}
+  .btn:hover{transform:translateY(-1px)}
+  .btn-primary{background:var(--amber);color:var(--amber-ink)}
+  .btn-primary:hover{background:#F5B04A}
+  .btn-ghost{border:1px solid var(--teal-500);color:var(--teal-50)}
+  .btn-ghost:hover{background:var(--teal-900)}
+  .btn svg{width:16px;height:16px;flex:none}
+  .photo{width:220px;height:220px;border-radius:50%;object-fit:cover;border:6px solid #fff;box-shadow:0 10px 30px rgba(4,52,44,.18)}
+  .built{background:#fff;border-radius:12px;padding:14px 18px;text-align:center;max-width:280px;color:var(--teal-900);font-size:13px;text-decoration:none;border:1px solid var(--teal-200)}
+  .built strong{display:block;font-size:14px;margin-bottom:2px}
+  .built:hover{border-color:var(--teal-500)}
+
+  /* Stats */
+  .stats{display:grid;grid-template-columns:repeat(4,1fr)}
+  .stat{padding:22px 16px;text-align:center;color:#fff}
+  .stat b{display:block;font-size:28px;font-weight:700;line-height:1.2}
+  .stat span{font-size:13px;opacity:.92}
+  .s1{background:var(--teal-900)} .s2{background:var(--teal-700)} .s3{background:var(--teal-500)} .s4{background:var(--amber-dark)}
+
+  /* Sections */
+  section{padding:72px 0;border-bottom:1px solid var(--line)}
+  section.soft{background:var(--bg-soft)}
+  .label{color:var(--teal-700);font-size:12px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;margin:0 0 8px}
+  h2{font-size:28px;line-height:1.25;margin:0 0 28px;font-weight:700;letter-spacing:-.01em}
+  .about{display:grid;grid-template-columns:1.6fr 1fr;gap:48px;align-items:start}
+  .about p{margin:0 0 14px;color:var(--muted);font-size:16px}
+  .facts{background:var(--bg-soft);border:1px solid var(--line);border-radius:12px;padding:20px 22px;font-size:14px}
+  .facts div{display:flex;justify-content:space-between;gap:12px;padding:8px 0;border-bottom:1px solid var(--line)}
+  .facts div:last-child{border-bottom:0}
+  .facts dt{color:var(--muted)} .facts dd{margin:0;font-weight:500;text-align:right}
+
+  .timeline{border-left:2px solid var(--teal-500);margin-left:6px}
+  .job{position:relative;padding:0 0 32px 28px}
+  .job:last-child{padding-bottom:0}
+  .job::before{content:"";position:absolute;left:-8px;top:6px;width:14px;height:14px;border-radius:50%;background:#fff;border:3px solid var(--teal-500)}
+  .job-head{display:flex;justify-content:space-between;flex-wrap:wrap;gap:4px 16px;align-items:baseline}
+  .job h3{font-size:17px;margin:0;font-weight:600}
+  .when{color:var(--muted);font-size:13px;white-space:nowrap}
+  .org{color:var(--teal-700);font-size:14px;font-weight:500;margin:2px 0 8px}
+  .job ul{margin:0;padding-left:18px;color:var(--muted);font-size:15px}
+  .job li{margin:4px 0}
+  .job li strong{color:var(--ink);font-weight:600}
+
+  .grid2{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+  .card{background:#fff;border:1px solid var(--line);border-radius:14px;padding:24px;display:flex;flex-direction:column}
+  .card h3{font-size:18px;margin:0 0 8px}
+  .card p{color:var(--muted);font-size:15px;margin:0 0 14px}
+  .pills{display:flex;flex-wrap:wrap;gap:6px;margin:0 0 16px}
+  .pills span{background:var(--teal-50);color:var(--teal-900);font-size:12px;font-weight:500;padding:4px 10px;border-radius:999px}
+  .card .more{margin-top:auto;color:var(--amber-dark);font-weight:600;font-size:14px;text-decoration:none}
+  .card .more:hover{text-decoration:underline}
+  .series{list-style:none;padding:0;margin:0 0 16px;font-size:14px}
+  .series li{display:flex;justify-content:space-between;gap:12px;padding:7px 0;border-bottom:1px dashed var(--line)}
+  .series li span:last-child{color:var(--muted);white-space:nowrap}
+
+  .skills{display:grid;grid-template-columns:repeat(2,1fr);gap:24px 40px}
+  .skills h3{font-size:14px;margin:0 0 10px;color:var(--teal-900)}
+  .chips{display:flex;flex-wrap:wrap;gap:8px}
+  .chips span{border:1px solid var(--line);background:#fff;font-size:13px;padding:5px 12px;border-radius:999px}
+  .certs{margin-top:32px;display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+  .cert{background:#fff;border:1px solid var(--line);border-left:4px solid var(--teal-500);border-radius:0 10px 10px 0;padding:12px 14px;font-size:14px;font-weight:500}
+
+  .cols3{display:grid;grid-template-columns:repeat(3,1fr);gap:32px}
+  .cols3 h3{font-size:14px;color:var(--teal-900);margin:0 0 12px;text-transform:uppercase;letter-spacing:.08em}
+  .list{list-style:none;padding:0;margin:0;font-size:15px}
+  .list li{padding:6px 0}
+  .list small{display:block;color:var(--muted);font-size:13px}
+  .yr{color:var(--amber-dark);font-weight:600;margin-right:6px}
+
+  footer{background:var(--teal-950);color:var(--teal-200);padding:64px 0 40px;text-align:center}
+  footer h2{color:#fff;margin-bottom:10px}
+  footer p{margin:0 0 26px}
+  footer .ctas{justify-content:center}
+  .contact-line{margin-top:28px;font-size:14px}
+  .contact-line a{color:var(--teal-50);text-decoration:none}
+  .contact-line a:hover{text-decoration:underline}
+  .copy{margin-top:36px;font-size:12px;color:var(--teal-300)}
+
+  @media (max-width:860px){
+    .links a{display:none}
+    .hero{grid-template-columns:1fr}
+    .hero-main{padding:48px 24px}
+    .hero-side{order:-1;padding:32px 24px;flex-direction:row;flex-wrap:wrap}
+    .photo{width:140px;height:140px}
+    .stats{grid-template-columns:repeat(2,1fr)}
+    .about,.grid2,.skills,.cols3{grid-template-columns:1fr}
+    .certs{grid-template-columns:1fr 1fr}
+    section{padding:52px 0}
+  }
+  @media (max-width:480px){
+    .wrap{padding:0 16px}
+    .hero-main{padding:40px 16px}
+    .certs{grid-template-columns:1fr}
+    .built{max-width:none}
+  }
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="wrap">
+    <a class="brand" href="#top">Ganesh Kumar</a>
+    <div class="links">
+      <a href="#about"><span lang="en">About</span><span lang="fr">À propos</span></a>
+      <a href="#experience"><span lang="en">Experience</span><span lang="fr">Expérience</span></a>
+      <a href="#projects"><span lang="en">Projects</span><span lang="fr">Projets</span></a>
+      <a href="#skills"><span lang="en">Skills</span><span lang="fr">Compétences</span></a>
+      <a href="#contact">Contact</a>
+      <div class="lang" role="group" aria-label="Language">
+        <button type="button" data-lang="en" aria-pressed="true">EN</button>
+        <button type="button" data-lang="fr" aria-pressed="false">FR</button>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<header class="hero" id="top">
+  <div class="hero-main">
+    <p class="eyebrow">
+      <span lang="en">Certified Scrum Master (SAFe 6.0, CSM) · Paris, France</span>
+      <span lang="fr">Scrum Master certifié (SAFe 6.0, CSM) · Paris, France</span>
+    </p>
+    <h1>
+      <span lang="en">Agile delivery for complex enterprise programs, with data and AI.</span>
+      <span lang="fr">Livraison Agile pour des programmes d'entreprise complexes, avec la data et l'IA.</span>
+    </h1>
+    <p class="sub">
+      <span lang="en">Across telecom, retail and manufacturing · 12+ years with Verizon, Adidas, ABB and Walmart</span>
+      <span lang="fr">Télécoms, retail et industrie · Plus de 12 ans avec Verizon, Adidas, ABB et Walmart</span>
+    </p>
+    <div class="tags">
+      <span>SAFe 6.0</span>
+      <span lang="en">Telecom · Retail · Manufacturing</span>
+      <span lang="fr">Télécoms · Retail · Industrie</span>
+      <span lang="en">AI automation</span>
+      <span lang="fr">Automatisation IA</span>
+    </div>
+    <p class="seeking">
+      <span lang="en">Seeking: end-of-studies internship (MSc Audencia) or CDD/CDI · Available now · France and Europe</span>
+      <span lang="fr">Recherche : stage de fin d'études (MSc Audencia) ou CDD/CDI · Disponible immédiatement · France et Europe</span>
+    </p>
+    <div class="ctas">
+      <a class="btn btn-primary" href="#contact"><span lang="en">Let's talk</span><span lang="fr">Échangeons</span></a>
+      <a class="btn btn-ghost" href="assets/Ganesh_Kumar_Resume_EN.pdf" lang="en" download>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12m0 0l-5-5m5 5l5-5M5 21h14"/></svg>Download CV</a>
+      <a class="btn btn-ghost" href="assets/Ganesh_Kumar_Resume_FR.pdf" lang="fr" download>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12m0 0l-5-5m5 5l5-5M5 21h14"/></svg>Télécharger le CV</a>
+      <a class="btn btn-ghost" href="https://www.linkedin.com/in/ganeshkumarinspire" target="_blank" rel="noopener">LinkedIn</a>
+      <a class="btn btn-ghost" href="https://github.com/ganeshkumarinspire" target="_blank" rel="noopener">GitHub</a>
+    </div>
+  </div>
+  <div class="hero-side">
+    <img class="photo" src="assets/photo.jpg" alt="Ganesh Kumar" width="220" height="220">
+    <a class="built" href="https://github.com/ganeshkumarinspire/linkedin-post-agent" target="_blank" rel="noopener">
+      <strong><span lang="en">Built: LinkedIn Post Agent</span><span lang="fr">Réalisé : LinkedIn Post Agent</span></strong>
+      Python · GitHub Actions · GPT-4o
+    </a>
+  </div>
+</header>
+
+<div class="stats">
+  <div class="stat s1"><b>95%</b><span lang="en">Release-plan adherence</span><span lang="fr">Respect des plans de livraison</span></div>
+  <div class="stat s2"><b>70%</b><span lang="en">Less manual testing</span><span lang="fr">D'effort de test manuel en moins</span></div>
+  <div class="stat s3"><b>15–25%</b><span lang="en">Shorter sprint lead time</span><span lang="fr">De délai de sprint en moins</span></div>
+  <div class="stat s4"><b>12+</b><span lang="en">Years in Agile delivery</span><span lang="fr">Ans de livraison Agile</span></div>
+</div>
+
+<main>
+<section id="about">
+  <div class="wrap about">
+    <div>
+      <p class="label"><span lang="en">About</span><span lang="fr">À propos</span></p>
+      <h2><span lang="en">From quality engineering to Agile delivery leadership</span><span lang="fr">De l'ingénierie qualité au pilotage de la livraison Agile</span></h2>
+      <div lang="en">
+        <p>I started in quality engineering, testing warehouse, transport and e-commerce platforms for Walmart, Target and The Home Depot. That's where I learned where delivery usually breaks: late feedback, unclear priorities and hidden dependencies between teams.</p>
+        <p>Over 12 years I moved into Scrum Master and delivery roles for Verizon, Adidas, ABB and ADM, working with distributed teams in the US, Germany, Switzerland and the UK. I facilitate Scrum and SAFe events, coach Product Owners on the backlog, and track velocity, lead time and DORA metrics so improvement is based on data, not opinion.</p>
+        <p>Today I also apply AI to Agile work: automated reporting, backlog support and sprint-risk insights. I'm completing an MSc in Supply Chain Management at Audencia Business School.</p>
+      </div>
+      <div lang="fr">
+        <p>J'ai commencé dans l'ingénierie qualité, en testant des plateformes d'entrepôt, de transport et d'e-commerce pour Walmart, Target et The Home Depot. C'est là que j'ai compris où la livraison se grippe le plus souvent : un feedback tardif, des priorités floues et des dépendances cachées entre équipes.</p>
+        <p>En 12 ans, j'ai évolué vers des rôles de Scrum Master et de pilotage de la livraison pour Verizon, Adidas, ABB et ADM, avec des équipes distribuées aux États-Unis, en Allemagne, en Suisse et au Royaume-Uni. J'anime les événements Scrum et SAFe, j'accompagne les Product Owners sur le backlog et je suis la vélocité, le lead time et les métriques DORA pour que l'amélioration repose sur des données, pas sur des opinions.</p>
+        <p>J'intègre aujourd'hui l'IA dans le travail Agile : reporting automatisé, aide à la gestion du backlog et indicateurs de risque de sprint. Je termine un Master en Supply Chain Management à Audencia Business School.</p>
+      </div>
+    </div>
+    <dl class="facts">
+      <div><dt><span lang="en">Based in</span><span lang="fr">Basé à</span></dt><dd>Paris, France</dd></div>
+      <div><dt><span lang="en">Availability</span><span lang="fr">Disponibilité</span></dt><dd><span lang="en">Immediately</span><span lang="fr">Immédiate</span></dd></div>
+      <div><dt><span lang="en">Looking for</span><span lang="fr">Recherche</span></dt><dd><span lang="en">Internship · CDD · CDI</span><span lang="fr">Stage · CDD · CDI</span></dd></div>
+      <div><dt><span lang="en">Region</span><span lang="fr">Zone</span></dt><dd><span lang="en">France and Europe</span><span lang="fr">France et Europe</span></dd></div>
+      <div><dt><span lang="en">Languages</span><span lang="fr">Langues</span></dt><dd><span lang="en">English C2 · French A2</span><span lang="fr">Anglais C2 · Français A2</span></dd></div>
+    </dl>
+  </div>
+</section>
+
+<section id="experience" class="soft">
+  <div class="wrap">
+    <p class="label"><span lang="en">Experience</span><span lang="fr">Expérience</span></p>
+    <h2><span lang="en">12+ years across the US and Europe</span><span lang="fr">Plus de 12 ans entre les États-Unis et l'Europe</span></h2>
+    <div class="timeline">
+      <div class="job">
+        <div class="job-head"><h3>Scrum Master</h3><span class="when"><span lang="en">Jan 2025 – Aug 2025</span><span lang="fr">Janv. 2025 – Août 2025</span></span></div>
+        <p class="org">GlobalLogic → Verizon (USA)</p>
+        <ul lang="en">
+          <li>Reduced sprint lead time by <strong>15–25%</strong> through workflow optimization and continuous improvement.</li>
+          <li>Supported SAFe PI Planning and ART ceremonies in a multi-vendor environment, contributing to a 2–5% increase in sprint velocity.</li>
+          <li>Coached engineering, QA and product stakeholders on Agile and Scrum practices.</li>
+        </ul>
+        <ul lang="fr">
+          <li>Réduction du délai de sprint de <strong>15 à 25 %</strong> grâce à l'optimisation des flux et à l'amélioration continue.</li>
+          <li>Accompagnement du PI Planning SAFe et des cérémonies ART dans un environnement multi-fournisseurs, avec une hausse de 2 à 5 % de la vélocité.</li>
+          <li>Coaching des parties prenantes ingénierie, QA et produit sur les pratiques Agile et Scrum.</li>
+        </ul>
+      </div>
+      <div class="job">
+        <div class="job-head"><h3><span lang="en">Scrum Master and UAT Coordinator</span><span lang="fr">Scrum Master et Coordinateur UAT</span></h3><span class="when"><span lang="en">Sep 2021 – Sep 2024</span><span lang="fr">Sept. 2021 – Sept. 2024</span></span></div>
+        <p class="org">Accenture → ADM (<span lang="en">Germany</span><span lang="fr">Allemagne</span>), ABB (<span lang="en">Switzerland</span><span lang="fr">Suisse</span>), Adidas (<span lang="en">UK</span><span lang="fr">Royaume-Uni</span>)</p>
+        <ul lang="en">
+          <li>Achieved <strong>95% adherence</strong> to release plans for a cross-functional SAP delivery team.</li>
+          <li>Improved sprint predictability by <strong>25%</strong> and cut manual reporting effort by 30% with Scrum and Azure DevOps.</li>
+          <li>Reduced UAT cycle time by 10–20% and increased burn-down accuracy by 20–30%.</li>
+        </ul>
+        <ul lang="fr">
+          <li><strong>95 % de respect</strong> des plans de livraison pour une équipe SAP transverse.</li>
+          <li>Prévisibilité des sprints améliorée de <strong>25 %</strong> et effort de reporting manuel réduit de 30 % avec Scrum et Azure DevOps.</li>
+          <li>Cycle UAT réduit de 10 à 20 % et précision du burn-down augmentée de 20 à 30 %.</li>
+        </ul>
+      </div>
+      <div class="job">
+        <div class="job-head"><h3><span lang="en">Senior QA Lead and Scrum Master</span><span lang="fr">QA Lead Senior et Scrum Master</span></h3><span class="when"><span lang="en">May 2017 – Mar 2021</span><span lang="fr">Mai 2017 – Mars 2021</span></span></div>
+        <p class="org">Cognizant → JB Hunt, Kubota (USA)</p>
+        <ul lang="en">
+          <li>Reduced manual testing effort by about <strong>70%</strong> through automation.</li>
+          <li>Facilitated Agile delivery and quality assurance on transportation and manufacturing platforms.</li>
+        </ul>
+        <ul lang="fr">
+          <li>Effort de test manuel réduit d'environ <strong>70 %</strong> grâce à l'automatisation.</li>
+          <li>Animation de la livraison Agile et de l'assurance qualité sur des plateformes transport et industrie.</li>
+        </ul>
+      </div>
+      <div class="job">
+        <div class="job-head"><h3><span lang="en">Quality Analyst and BI Lead</span><span lang="fr">Analyste Qualité et Responsable BI</span></h3><span class="when"><span lang="en">Aug 2011 – Apr 2017</span><span lang="fr">Août 2011 – Avr. 2017</span></span></div>
+        <p class="org">Cognizant → Walmart, Target, The Home Depot, ADM</p>
+        <ul lang="en">
+          <li>Introduced Shift-Left quality practices: defects found <strong>30–40% earlier</strong> and 25% fewer post-release defects.</li>
+          <li>Built expertise in WMS, YMS, TMS, EDI, logistics and e-commerce platforms.</li>
+        </ul>
+        <ul lang="fr">
+          <li>Pratiques qualité Shift-Left : anomalies détectées <strong>30 à 40 % plus tôt</strong> et 25 % d'anomalies post-livraison en moins.</li>
+          <li>Expertise sur les plateformes WMS, YMS, TMS, EDI, logistique et e-commerce.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="projects">
+  <div class="wrap">
+    <p class="label"><span lang="en">Projects</span><span lang="fr">Projets</span></p>
+    <h2><span lang="en">Things I've built and written</span><span lang="fr">Ce que j'ai construit et écrit</span></h2>
+    <div class="grid2">
+      <article class="card">
+        <h3>Retro Pattern Analyser</h3>
+        <p lang="en">Teams keep raising the same issues in retros, and nobody checks whether the action items worked. This app puts several sprints of retro notes side by side: a theme heatmap, recurring issues ("Test environments: 5 of 6 sprints"), an automatic check on whether each action stuck, and a Claude-powered analysis of root causes with three recommendations.</p>
+        <p lang="fr">Les équipes remontent les mêmes problèmes à chaque rétro, et personne ne vérifie si les actions ont fonctionné. Cette application met plusieurs sprints de rétros côte à côte : une carte de chaleur des thèmes, les problèmes récurrents (« Environnements de test : 5 sprints sur 6 »), une vérification automatique de chaque action, et une analyse par Claude des causes racines avec trois recommandations.</p>
+        <div class="pills"><span>Python</span><span>Streamlit</span><span>pandas</span><span>Plotly</span><span>Claude API</span></div>
+        <div style="margin-top:auto;display:flex;gap:20px;flex-wrap:wrap">
+          <a class="more" href="https://retro-pattern-analyser-2srxmmskzetfmuz2vri7hg.streamlit.app/" target="_blank" rel="noopener"><span lang="en">Try the live demo →</span><span lang="fr">Essayer la démo →</span></a>
+          <a class="more" href="https://github.com/ganeshkumarinspire/retro-pattern-analyser" target="_blank" rel="noopener"><span lang="en">View on GitHub →</span><span lang="fr">Voir sur GitHub →</span></a>
+        </div>
+      </article>
+      <article class="card">
+        <h3>LinkedIn Post Agent</h3>
+        <p lang="en">An automated publishing pipeline for my LinkedIn content series. GitHub Actions runs it on schedule, GPT-4o checks that each post's text matches the day's visual before anything goes live, and every run is logged back to the repository.</p>
+        <p lang="fr">Un pipeline de publication automatisé pour mes séries LinkedIn. GitHub Actions l'exécute selon un planning, GPT-4o vérifie que le texte de chaque post correspond au visuel du jour avant publication, et chaque exécution est journalisée dans le dépôt.</p>
+        <div class="pills"><span>Python</span><span>GitHub Actions</span><span>LinkedIn API</span><span>OpenAI GPT-4o</span></div>
+        <a class="more" href="https://github.com/ganeshkumarinspire/linkedin-post-agent" target="_blank" rel="noopener"><span lang="en">View on GitHub →</span><span lang="fr">Voir sur GitHub →</span></a>
+      </article>
+      <article class="card">
+        <h3><span lang="en">LinkedIn content series</span><span lang="fr">Séries de contenu LinkedIn</span></h3>
+        <p lang="en">Six series on Agile practice, written from real delivery situations.</p>
+        <p lang="fr">Six séries sur la pratique Agile, tirées de situations réelles de livraison.</p>
+        <ul class="series">
+          <li><span>Lessons from My Agile Journey</span><span lang="en">Ongoing</span><span lang="fr">En cours</span></li>
+          <li><span>Agile Reimagined With AI</span><span lang="en">Ongoing</span><span lang="fr">En cours</span></li>
+          <li><span>Data-Driven Agile</span><span lang="en">36 posts</span><span lang="fr">36 posts</span></li>
+          <li><span>50 Days Kanban Journey</span><span lang="en">50 posts</span><span lang="fr">50 posts</span></li>
+          <li><span>SAFe Learning Series</span><span lang="en">40 posts</span><span lang="fr">40 posts</span></li>
+          <li><span>Scrum Master in Action</span><span lang="en">40 posts</span><span lang="fr">40 posts</span></li>
+        </ul>
+        <a class="more" href="https://www.linkedin.com/in/ganeshkumarinspire/recent-activity/all/" target="_blank" rel="noopener"><span lang="en">Read the posts →</span><span lang="fr">Lire les posts →</span></a>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section id="skills" class="soft">
+  <div class="wrap">
+    <p class="label"><span lang="en">Skills</span><span lang="fr">Compétences</span></p>
+    <h2><span lang="en">Skills and certifications</span><span lang="fr">Compétences et certifications</span></h2>
+    <div class="skills">
+      <div>
+        <h3><span lang="en">Agile and delivery</span><span lang="fr">Agile et livraison</span></h3>
+        <div class="chips"><span>Scrum</span><span>SAFe 6.0</span><span>Kanban</span><span>PI Planning</span><span lang="en">Agile coaching</span><span lang="fr">Coaching Agile</span><span lang="en">UAT coordination</span><span lang="fr">Coordination UAT</span><span>CI/CD</span><span lang="en">DORA metrics</span><span lang="fr">Métriques DORA</span></div>
+      </div>
+      <div>
+        <h3><span lang="en">Tools</span><span lang="fr">Outils</span></h3>
+        <div class="chips"><span>Jira</span><span>Azure DevOps</span><span>Confluence</span><span>Miro</span><span>Trello</span><span>TFS / MTM</span><span>Vabro.ai</span></div>
+      </div>
+      <div>
+        <h3><span lang="en">Enterprise and supply-chain systems</span><span lang="fr">Systèmes d'entreprise et supply chain</span></h3>
+        <div class="chips"><span>SAP SD/MM/PP</span><span>JDA TMS and YMS</span><span>WMS</span><span>OMS</span><span>EDI</span><span>AS400</span><span>Oracle</span></div>
+      </div>
+      <div>
+        <h3>Leadership</h3>
+        <div class="chips"><span lang="en">Stakeholder management</span><span lang="fr">Gestion des parties prenantes</span><span lang="en">Cross-functional collaboration</span><span lang="fr">Collaboration transverse</span><span lang="en">Vendor coordination</span><span lang="fr">Coordination fournisseurs</span><span lang="en">Conflict resolution</span><span lang="fr">Résolution de conflits</span></div>
+      </div>
+    </div>
+    <div class="certs">
+      <div class="cert">SAFe® 6.0 Scrum Master (SSM)</div>
+      <div class="cert">Certified Scrum Master (CSM)</div>
+      <div class="cert"><span lang="en">Jira certification</span><span lang="fr">Certification Jira</span></div>
+      <div class="cert">Kanban Fundamentals</div>
+      <div class="cert"><span lang="en">Trello certification</span><span lang="fr">Certification Trello</span></div>
+      <div class="cert"><span lang="en">Supply Chain Digital Transformation</span><span lang="fr">Transformation digitale supply chain</span></div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap cols3">
+    <div>
+      <h3><span lang="en">Awards</span><span lang="fr">Distinctions</span></h3>
+      <ul class="list">
+        <li><span class="yr">2024</span>Process Excellence Award</li>
+        <li><span class="yr">2022</span>APEX Award</li>
+        <li><span class="yr">2021</span><span lang="en">10 Years Service Award</span><span lang="fr">Reconnaissance 10 ans d'ancienneté</span></li>
+        <li><span class="yr">2020</span>Sapphire Empowerment Award</li>
+        <li><span class="yr">2019</span>QEnA Maestro Annual Award</li>
+      </ul>
+    </div>
+    <div>
+      <h3><span lang="en">Education</span><span lang="fr">Formation</span></h3>
+      <ul class="list">
+        <li><span lang="en">MSc Supply Chain Management</span><span lang="fr">Master Supply Chain Management</span><small>Audencia Business School, France · 2025–2026</small></li>
+        <li><span lang="en">B.E. Computer Science and Engineering</span><span lang="fr">Diplôme d'ingénieur en informatique</span><small>Anna University, <span lang="en">India</span><span lang="fr">Inde</span> · 2006–2010</small></li>
+      </ul>
+    </div>
+    <div>
+      <h3><span lang="en">Languages</span><span lang="fr">Langues</span></h3>
+      <ul class="list">
+        <li><span lang="en">English</span><span lang="fr">Anglais</span><small><span lang="en">C2 · Professional</span><span lang="fr">C2 · Professionnel</span></small></li>
+        <li><span lang="en">French</span><span lang="fr">Français</span><small><span lang="en">A2 · Improving</span><span lang="fr">A2 · En progression</span></small></li>
+      </ul>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer id="contact">
+  <div class="wrap">
+    <h2><span lang="en">Hiring a Scrum Master in France or Europe?</span><span lang="fr">Vous recrutez un Scrum Master en France ou en Europe ?</span></h2>
+    <p><span lang="en">I'm available now. A message or a referral would mean a lot.</span><span lang="fr">Je suis disponible immédiatement. Un message ou une recommandation me ferait très plaisir.</span></p>
+    <div class="ctas">
+      <a class="btn btn-primary" href="mailto:ganeshkumarinspire@gmail.com"><span lang="en">Email me</span><span lang="fr">M'écrire</span></a>
+      <a class="btn btn-ghost" href="https://www.linkedin.com/in/ganeshkumarinspire" target="_blank" rel="noopener">LinkedIn</a>
+      <a class="btn btn-ghost" href="https://github.com/ganeshkumarinspire" target="_blank" rel="noopener">GitHub</a>
+    </div>
+    <div class="contact-line">
+      <a href="mailto:ganeshkumarinspire@gmail.com">ganeshkumarinspire@gmail.com</a> &nbsp;·&nbsp;
+      <a href="tel:+33774072471">+33 7 74 07 24 71</a>
+    </div>
+    <div class="copy">© 2026 Ganesh Kumar</div>
+  </div>
+</footer>
+
+<script>
+  (function(){
+    var root = document.documentElement;
+    var buttons = document.querySelectorAll('.lang button');
+    function setLang(l){
+      root.lang = l;
+      buttons.forEach(function(b){ b.setAttribute('aria-pressed', b.dataset.lang === l ? 'true' : 'false'); });
+      try { localStorage.setItem('lang', l); } catch(e){}
+    }
+    var saved = null;
+    try { saved = localStorage.getItem('lang'); } catch(e){}
+    var fromUrl = new URLSearchParams(location.search).get('lang');
+    var initial = fromUrl || saved || ((navigator.language || 'en').toLowerCase().indexOf('fr') === 0 ? 'fr' : 'en');
+    setLang(initial === 'fr' ? 'fr' : 'en');
+    buttons.forEach(function(b){ b.addEventListener('click', function(){ setLang(b.dataset.lang); }); });
+  })();
+</script>
+</body>
+</html>
