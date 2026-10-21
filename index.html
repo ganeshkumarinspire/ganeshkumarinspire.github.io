@@ -61,6 +61,8 @@
   .built{background:#fff;border-radius:12px;padding:14px 18px;text-align:center;max-width:280px;color:var(--teal-900);font-size:13px;text-decoration:none;border:1px solid var(--teal-200)}
   .built strong{display:block;font-size:14px;margin-bottom:2px}
   .built:hover{border-color:var(--teal-500)}
+  .built-list{display:flex;flex-direction:column;gap:10px;width:100%;max-width:280px}
+  .built-list .built{max-width:none}
 
   /* Stats */
   .stats{display:grid;grid-template-columns:repeat(4,1fr)}
@@ -76,6 +78,11 @@
   h2{font-size:28px;line-height:1.25;margin:0 0 28px;font-weight:700;letter-spacing:-.01em}
   .about{display:grid;grid-template-columns:1.6fr 1fr;gap:48px;align-items:start}
   .about p{margin:0 0 14px;color:var(--muted);font-size:16px}
+  .innov{margin:0 0 14px;padding-left:20px;color:var(--muted);font-size:16px}
+  .innov li{margin-bottom:10px}
+  .innov b{color:var(--teal-900)}
+  .innov a{color:var(--amber-dark);font-weight:600;text-decoration:none;white-space:nowrap}
+  .innov a:hover{text-decoration:underline}
   .facts{background:var(--bg-soft);border:1px solid var(--line);border-radius:12px;padding:20px 22px;font-size:14px}
   .facts div{display:flex;justify-content:space-between;gap:12px;padding:8px 0;border-bottom:1px solid var(--line)}
   .facts div:last-child{border-bottom:0}
@@ -106,6 +113,7 @@
   .series li span:last-child{color:var(--muted);white-space:nowrap}
 
   .skills{display:grid;grid-template-columns:repeat(2,1fr);gap:24px 40px}
+  .skills > div:first-child{grid-column:1/-1}
   .skills h3{font-size:14px;margin:0 0 10px;color:var(--teal-900)}
   .chips{display:flex;flex-wrap:wrap;gap:8px}
   .chips span{border:1px solid var(--line);background:#fff;font-size:13px;padding:5px 12px;border-radius:999px}
@@ -144,6 +152,7 @@
     .hero-main{padding:40px 16px}
     .certs{grid-template-columns:1fr}
     .built{max-width:none}
+    .built-list{max-width:none;flex:1 1 220px}
   }
 </style>
 </head>
@@ -204,10 +213,16 @@
   </div>
   <div class="hero-side">
     <img class="photo" src="assets/photo.jpg" alt="Ganesh Kumar" width="220" height="220">
-    <a class="built" href="https://github.com/ganeshkumarinspire/linkedin-post-agent" target="_blank" rel="noopener">
-      <strong><span lang="en">Built: LinkedIn Post Agent</span><span lang="fr">Réalisé : LinkedIn Post Agent</span></strong>
-      Python · GitHub Actions · GPT-4o
-    </a>
+    <div class="built-list">
+      <a class="built" href="https://retro-pattern-analyser-2srxmmskzetfmuz2vri7hg.streamlit.app/" target="_blank" rel="noopener">
+        <strong><span lang="en">Built: Retro Pattern Analyser</span><span lang="fr">Réalisé : Retro Pattern Analyser</span></strong>
+        Python · Streamlit · <span lang="en">Agentic AI</span><span lang="fr">IA agentique</span>
+      </a>
+      <a class="built" href="https://github.com/ganeshkumarinspire/linkedin-post-agent" target="_blank" rel="noopener">
+        <strong><span lang="en">Built: LinkedIn Post Agent</span><span lang="fr">Réalisé : LinkedIn Post Agent</span></strong>
+        Python · GitHub Actions · <span lang="en">Agentic AI</span><span lang="fr">IA agentique</span>
+      </a>
+    </div>
   </div>
 </header>
 
@@ -223,16 +238,26 @@
   <div class="wrap about">
     <div>
       <p class="label"><span lang="en">About</span><span lang="fr">À propos</span></p>
-      <h2><span lang="en">From quality engineering to Agile delivery leadership</span><span lang="fr">De l'ingénierie qualité au pilotage de la livraison Agile</span></h2>
+      <h2><span lang="en">From quality engineering to AI-enabled Agile delivery</span><span lang="fr">De l'ingénierie qualité à la livraison Agile augmentée par l'IA</span></h2>
       <div lang="en">
         <p>I started in quality engineering, testing warehouse, transport and e-commerce platforms for Walmart, Target and The Home Depot. That's where I learned where delivery usually breaks: late feedback, unclear priorities and hidden dependencies between teams.</p>
         <p>Over the years I moved into Scrum Master and delivery roles for Verizon, Adidas, ABB and ADM, working from India with distributed client teams in the US, Germany, Switzerland and the UK. I facilitate Scrum and SAFe events, coach Product Owners on the backlog, and track velocity, lead time and DORA metrics so improvement is based on data, not opinion.</p>
-        <p>Today I also apply AI to Agile work: automated reporting, backlog support and sprint-risk insights. I've built two agentic AI tools of my own, a Retro Pattern Analyser and a LinkedIn Post Agent. I'm completing an MSc in Supply Chain Management at Audencia Business School.</p>
+        <p>Today I don't just talk about AI, I build with it. I've designed and built two agentic AI tools that solve real delivery problems:</p>
+        <ul class="innov">
+          <li><b>Retro Pattern Analyser.</b> Teams often raise the same problems sprint after sprint, and nobody checks whether their fixes worked. This tool reads retro notes from many sprints, shows which problems keep coming back, and checks whether the actions the team agreed actually solved them. It then uses AI to explain the likely causes and suggest next steps. <a href="https://retro-pattern-analyser-2srxmmskzetfmuz2vri7hg.streamlit.app/" target="_blank" rel="noopener">Try the live demo →</a></li>
+          <li><b>LinkedIn Post Agent.</b> An AI agent that runs my LinkedIn content. I create each day's visual with ChatGPT prompts; the agent writes a matching post, checks that the text fits the image and publishes it on schedule. It has run more than 140 times automatically. <a href="https://github.com/ganeshkumarinspire/linkedin-post-agent" target="_blank" rel="noopener">See the code →</a></li>
+        </ul>
+        <p>I'm also completing an MSc in Supply Chain Management at Audencia Business School.</p>
       </div>
       <div lang="fr">
         <p>J'ai commencé dans l'ingénierie qualité, en testant des plateformes d'entrepôt, de transport et d'e-commerce pour Walmart, Target et The Home Depot. C'est là que j'ai compris où la livraison se grippe le plus souvent : un feedback tardif, des priorités floues et des dépendances cachées entre équipes.</p>
         <p>Au fil des années, j'ai évolué vers des rôles de Scrum Master et de pilotage de la livraison pour Verizon, Adidas, ABB et ADM, depuis l'Inde, avec des équipes clientes distribuées aux États-Unis, en Allemagne, en Suisse et au Royaume-Uni. J'anime les événements Scrum et SAFe, j'accompagne les Product Owners sur le backlog et je suis la vélocité, le lead time et les métriques DORA pour que l'amélioration repose sur des données, pas sur des opinions.</p>
-        <p>J'intègre aujourd'hui l'IA dans le travail Agile : reporting automatisé, aide à la gestion du backlog et indicateurs de risque de sprint. J'ai développé deux outils d'IA agentique : un Retro Pattern Analyser et un LinkedIn Post Agent. Je termine un Master en Supply Chain Management à Audencia Business School.</p>
+        <p>Aujourd'hui, je ne me contente pas de parler d'IA : je construis avec. J'ai conçu et développé deux outils d'IA agentique qui répondent à de vrais problèmes de livraison :</p>
+        <ul class="innov">
+          <li><b>Retro Pattern Analyser.</b> Les équipes remontent souvent les mêmes problèmes de sprint en sprint, sans vérifier si leurs actions ont fonctionné. Cet outil analyse les notes de rétrospective de plusieurs sprints, montre les problèmes qui reviennent et vérifie si les actions décidées les ont vraiment résolus. Il utilise ensuite l'IA pour expliquer les causes probables et proposer les prochaines étapes. <a href="https://retro-pattern-analyser-2srxmmskzetfmuz2vri7hg.streamlit.app/" target="_blank" rel="noopener">Essayer la démo →</a></li>
+          <li><b>LinkedIn Post Agent.</b> Un agent IA qui gère mon contenu LinkedIn. Je crée le visuel du jour avec des prompts ChatGPT ; l'agent rédige un post adapté, vérifie que le texte correspond à l'image et le publie selon un planning. Plus de 140 exécutions automatisées à ce jour. <a href="https://github.com/ganeshkumarinspire/linkedin-post-agent" target="_blank" rel="noopener">Voir le code →</a></li>
+        </ul>
+        <p>Je termine également un Master en Supply Chain Management à Audencia Business School.</p>
       </div>
     </div>
     <dl class="facts">
@@ -351,6 +376,10 @@
     <p class="label"><span lang="en">Skills</span><span lang="fr">Compétences</span></p>
     <h2><span lang="en">Skills and certifications</span><span lang="fr">Compétences et certifications</span></h2>
     <div class="skills">
+      <div>
+        <h3><span lang="en">AI and automation</span><span lang="fr">IA et automatisation</span></h3>
+        <div class="chips"><span lang="en">Generative AI</span><span lang="fr">IA générative</span><span lang="en">Agentic AI</span><span lang="fr">IA agentique</span><span lang="en">AI agents</span><span lang="fr">Agents IA</span><span>Prompt engineering</span><span>LLMs (ChatGPT, GPT-4o)</span><span lang="en">Workflow automation</span><span lang="fr">Automatisation des workflows</span><span>Python</span><span>Streamlit</span><span>GitHub Actions</span></div>
+      </div>
       <div>
         <h3><span lang="en">Agile and delivery</span><span lang="fr">Agile et livraison</span></h3>
         <div class="chips"><span>Scrum</span><span>SAFe 6.0</span><span>Kanban</span><span>PI Planning</span><span lang="en">Agile coaching</span><span lang="fr">Coaching Agile</span><span lang="en">UAT coordination</span><span lang="fr">Coordination UAT</span><span>CI/CD</span><span lang="en">DORA metrics</span><span lang="fr">Métriques DORA</span></div>
